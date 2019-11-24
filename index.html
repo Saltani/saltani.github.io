@@ -1,1 +1,252 @@
-Hello World
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Social Icons (Font Awesome)
+  ––––––––––––––––––––––––––––––––––––––-->
+  <link href="css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <title>Learn CSS Grid</title>
+</head>
+
+<body>
+
+  <!--=========================== Navigation Bar ============================-->
+  <nav class="navbar-container">
+
+    <!-- Left side container -->
+    <div class="left-container">
+
+      <!-- Home icon -->
+      <a href="#home" class="link icon home fas fa-home"></a> <!-- Home Icon -->
+
+      <!-- Menu items -->
+      <a href="#about" class="md link text om">Om</a>
+      <a href="#kurser" class="md link text kurser">Kurser</a>
+      <a href="#kontakt" class="md link text kontakt">Kontakt</a>
+
+    </div>
+
+    <!-- Right side container -->
+    <div class="right-container">
+
+      <!-- Social Icons -->
+      <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" class="md link icon messenger fab fa-facebook-messenger" title="Messenger"></a>
+      <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" class="md link icon facebook fab fa-facebook" title="Facebook"></a>
+      <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" class="md link icon instagram fab fa-instagram" title="Instagram"></a>
+      <a class="sm link icon menu fas fa-bars" title="menu"></a>
+
+    </div>
+  </nav>
+
+  <!-- Menu Overlay -->
+  <aside class="overlay-menu">
+
+    <!-- Close Button (cross) -->
+    <a class="link icon close fas fa-times"></a>
+
+    <!-- Menu -->
+    <div class="menu-container">
+
+      <!-- Text links -->
+      <a href="#home" class="link text home">Home</a>
+      <a href="#about" class="link text om">Om</a>
+      <a href="#kurser" class="link text kurser">Kurser</a>
+      <a href="#kontakt" class="link text kontakt">Kontakt</a>
+
+      <hr class="hr-20">
+
+      <!-- Container for social icons -->
+      <div class="icon-container">
+        <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" class="link icon messenger fab fa-facebook-messenger" title="Messenger"></a>
+        <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" class="link icon facebook fab fa-facebook" title="Facebook"></a>
+        <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" class="link icon instagram fab fa-instagram" title="Instagram"></a>
+      </div>
+
+    </div>
+  </aside>
+  <!--==================== MAIN GRID CONTAINER ====================-->
+  <main class="grid-container">
+
+    <!--========================= HEADER =========================-->
+    <header id="home">
+      <!-- Frontpage Image -->
+      <div class="frontpage">
+        <div class="background-image"></div>
+      </div>
+
+      <!-- Frontpage Banner -->
+      <h1 class="banner">
+        <small>Watercolor Art</small>Falk-Jensen Art<small>The Imperfect is Perfect</small>
+      </h1>
+    </header>
+
+    <!--========================= ABOUT =========================-->
+    <section class="about-section" id="about">
+
+      <!-- Heading -->
+      <div class="heading-container">
+        <h1 class="heading">Om mig og min Akvarel</h1>
+      </div>
+
+      <!-- Image -->
+      <div class="image-container">
+        <img class="image" src="img/annisette/709x708.jpg" alt="Annisette Falk-Jensen">
+      </div>
+
+
+      <!-- Text -->
+      <article class="text-container">
+        <div class="inner-text-container">
+          <p>
+            <sup><i class="quotation-marks fas fa-quote-left"></i></sup>
+            Jeg for&shy;dy&shy;ber mig i far&shy;ver&shy;ne, som lang&shy;somt spre&shy;der sig på pa&shy;pi&shy;ret og
+            by&shy;der hin&shy;an&shy;den vel&shy;kom&shy;men. Lang&shy;somt for&shy;mer der sig en blomst, et
+            an&shy;sigt, et smil, som lys&shy;ner i takt med at far&shy;ver&shy;ne tør&shy;rer. Ti&shy;den
+            står stil&shy;le og ver&shy;den om&shy;kring mig for&shy;svin&shy;der.
+            I det øje&shy;blik, er jeg ét med min akva&shy;rel.
+            <sup><i class="quotation-marks fas fa-quote-right"></i></sup>
+          </p>
+          <hr class="hr-30">
+          <p>
+            Det star&shy;tede for&shy;å&shy;ret 2016, hvor jeg for før&shy;ste gang stif&shy;tede
+            be&shy;kendt&shy;skab med akva&shy;rel. En blok, en pen&shy;sel, en pa&shy;let&shy;te og en bog
+            (som nok var me&shy;re til de øve&shy;de) var min start.
+            Jeg op&shy;dage&shy;de en ver&shy;den, som jeg ind&shy;til da kun hav&shy;de hørt om.
+            Jeg blev gre&shy;bet af en driv&shy;kraft og en iver, som jeg ikke hav&shy;de følt
+            tid&shy;li&shy;ge&shy;re. Dér star&shy;tede min fan&shy;ta&shy;sti&shy;ske rej&shy;se ind i akva&shy;rel&shy;lens
+            mysti&shy;ske og magi&shy;ske ver&shy;den.
+          </p>
+          <p>
+            Jeg til&shy;brag&shy;te man&shy;ge ti&shy;mer både dag og af&shy;ten, hvor jeg ter&shy;pe&shy;de og
+            øve&shy;de mig. Jeg søg&shy;te vi&shy;den i bø&shy;ger og på "net&shy;tet" og fra de man&shy;ge
+            hjælp&shy;somme akva&shy;re&shy;li&shy;ster som jeg lær&shy;te at ken&shy;de. Min tørst ef&shy;ter
+            vi&shy;den om far&shy;ver, ma&shy;te&shy;ri&shy;a&shy;ler og tek&shy;nik&shy;ker vok&shy;se&shy;de jo me&shy;re jeg lær&shy;te
+            og lang&shy;somt men sik&shy;kert fik jeg akva&shy;rel&shy;len ind un&shy;der hu&shy;den.
+            Jeg lod min kre&shy;a&shy;ti&shy;vi&shy;tet og spon&shy;ta&shy;ni&shy;tet få frit spil, og min
+            udvik&shy;ling og tørst ef&shy;ter at læ&shy;re me&shy;re tog fart.
+          </p>
+          <p>
+            Mit mot&shy;to "The im&shy;per&shy;fect is per&shy;fect" er en ac&shy;cept af, at akva&shy;rel&shy;len
+            er le&shy;ven&shy;de, ufor&shy;ud&shy;si&shy;ge&shy;lig og magisk, og at per&shy;fek&shy;tio&shy;nis&shy;me ikke hø&shy;rer
+            hjem&shy;me i akva&shy;rel&shy;lens uni&shy;vers.
+          </p>
+          <p>
+            Jeg er dybt tak&shy;nem&shy;me&shy;lig for alle som har støt&shy;tet mig kunst&shy;ne&shy;risk og
+            per&shy;son&shy;ligt, det er uund&shy;værd&shy;ligt for mig.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!--========================= KURSER =========================-->
+    <section class="kurser-section" id="kurser">
+
+      <!-- Heading -->
+      <div class="heading-container">
+        <h1 class="heading">Kurser</h1>
+      </div>
+
+      <!-- FOF-logo -->
+      <a class="image-container image-link" href="http://kortlink.dk/fof/22xs3" target="_blank">
+        <img class="image" src="img/fof-logo/600x302.png" alt="FOF-logo">
+      </a>
+
+      <!-- Text -->
+      <article class="text-container">
+        <div class="inner-text-container">
+
+          <p>
+            Jeg un&shy;der&shy;vi&shy;ser i akva&shy;rel gen&shy;nem FOF, og alle er vel&shy;kom&shy;ne.
+            Her ar&shy;bejder vi med far&shy;ver, lys og skyg&shy;ge, for&shy;skel&shy;li&shy;ge ef&shy;fek&shy;ter,
+            ma&shy;te&shy;ri&shy;a&shy;ler, skit&shy;ser, per&shy;spek&shy;tiv og kom&shy;po&shy;si&shy;tion.
+          </p>
+          <p>
+            Det gæl&shy;der og&shy;så om at ha&shy;ve det sjovt når vi ma&shy;ler
+            med akva&shy;rel. Den er le&shy;ven&shy;de, ufor&shy;ud&shy;si&shy;ge&shy;lig og be&shy;stemt en ud&shy;for&shy;dring
+            for den kre&shy;a&shy;ti&shy;ve og kunst&shy;ne&shy;ri&shy;ske udvik&shy;ling. Det bed&shy;ste er, at al&shy;le
+            kan væ&shy;re med, uan&shy;set om du er ny&shy;be&shy;gyn&shy;der eller øvet.
+            Kom og vær med i hyg&shy;ge&shy;ligt og kre&shy;a&shy;tivt sel&shy;skab.
+          </p>
+
+          <p>
+            Du kan <a href="http://kortlink.dk/fof/22xs3" target="_blank">til&shy;mel&shy;de dig</a> ved
+            at klik&shy;ke på FOF-log&shy;o&shy;et. Du bli&shy;ver her&shy;ef&shy;ter presen&shy;te&shy;ret for
+            en li&shy;ste over de kur&shy;ser, jeg af&shy;hol&shy;der. Hér kan du klik&shy;ke dig ind på
+            de en&shy;kel&shy;te kur&shy;ser, læ&shy;se me&shy;re om dem samt til&shy;mel&shy;de dig.
+            <br>
+            Du kan og&shy;så gå ind på <a href="http://www.fof.dk" target="_blank">www.fof.dk</a> og
+            sø&shy;ge ef&shy;ter <em>an&shy;ni&shy;set&shy;te Falk-jen&shy;sen</em>.
+          </p>
+        </div>
+      </article>
+    </section>
+
+
+    <!--========================= KONTAKT =========================-->
+    <section class="kontakt-container" id="kontakt">
+
+      <!-- Heading -->
+      <div class="heading-container">
+        <h1 class="heading">Kontakt</h1>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons-container">
+        <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" class="icon fab fa-facebook-messenger" title="Messenger"></a>
+        <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" class="icon fab fa-facebook" title="Facebook"></a>
+        <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" class="icon fab fa-instagram" title="Instagram"></a>
+      </div>
+
+      <!-- Text -->
+      <article class="text-container">
+        <div class="inner-text-container">
+          <p>
+            Hvis du har spørgs&shy;mål eller kom&shy;men&shy;ta&shy;rer er du vel&shy;kom&shy;men til at
+            skri&shy;ve en be&shy;sked til mig på <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" title="Messenger">Messenger</a>.
+          </p>
+          <p>
+            Du kan og&shy;så tage et kig på min <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" title="Facebook">Facebook-side</a>. Her
+            kan du se mi&shy;ne ma&shy;le&shy;ri&shy;er og fin&shy;de in&shy;for&shy;ma&shy;tion om kom&shy;men&shy;de
+            events. Si&shy;den bli&shy;ver lø&shy;ben&shy;de op&shy;da&shy;te&shy;ret.
+          </p>
+          <p>
+            På <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" title="Instagram">Instagram</a> kan du se de sam&shy;me ma&shy;le&shy;ri&shy;er som på min
+            <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" title="Facebook">Facebook-side</a>.
+          </p>
+        </div>
+      </article>
+    </section>
+
+
+    <!--========================= FOOTER =========================-->
+    <footer>
+      <p>
+        &#x57;&#x65;&#x62;&#x6d;&#x61;&#x73;&#x74;&#x65;&#x72;&#x3a; &#x50;&#x6f;&#x76;&#x6c; &#x46;&#x61;&#x6c;&#x6b;&#x2d;&#x4a;&#x65;&#x6e;&#x73;&#x65;&#x6e;
+        &#47; &#x70;&#x6f;&#x76;&#x6c;&#x40;&#x66;&#x61;&#x6c;&#x6b;&#x2d;&#x6a;&#x65;&#x6e;&#x73;&#x65;&#x6e;&#x2e;&#x64;&#x6b;
+      </p>
+    </footer>
+  </main>
+
+  <!-- Navigation Bar JS -->
+  <script src="js/navbar.js"></script>
+
+  <!-- RFS -->
+  <!-- <script src="js/require.js" charset="utf-8"></script>
+  <script src="js/rfs.js" charset="utf-8"></script> -->
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
