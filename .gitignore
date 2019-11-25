@@ -1,1 +1,7 @@
 scss/
+build/
+node_modules/
+package-lock.json
+notes.txt
+nohup.out
+*.map
