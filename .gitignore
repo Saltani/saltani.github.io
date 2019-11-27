@@ -5,3 +5,4 @@ package-lock.json
 notes.txt
 nohup.out
 *.map
+.sass-cache
