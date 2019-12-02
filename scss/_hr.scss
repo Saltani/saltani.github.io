@@ -1,0 +1,56 @@
+//////////////////////// Orange-red horizontal line ////////////////////////////
+@mixin horizontal-line($width)
+{
+    width: $width;
+
+    color: $orange-red;
+}
+.hr-10
+{
+    @include horizontal-line(10%);
+}
+
+.hr-20
+{
+    @include horizontal-line(20%);
+}
+
+.hr-30
+{
+    @include horizontal-line(30%);
+}
+
+.hr-40
+{
+    @include horizontal-line(40%);
+}
+
+.hr-50
+{
+    @include horizontal-line(50%);
+}
+
+.hr-60
+{
+    @include horizontal-line(60%);
+}
+
+.hr-70
+{
+    @include horizontal-line(70%);
+}
+
+.hr-80
+{
+    @include horizontal-line(80%);
+}
+
+.hr-90
+{
+    @include horizontal-line(90%);
+}
+
+.hr-100
+{
+    @include horizontal-line(100%);
+}

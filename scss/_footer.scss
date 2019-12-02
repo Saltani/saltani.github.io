@@ -1,0 +1,19 @@
+@import 'colors';
+
+///////////////////////////////// FOOTER ///////////////////////////////////
+footer
+{
+    padding: .5rem;
+    // background-color: $dark-blue;
+
+    @extend %blue-linear-gradient;
+    grid-area: footer;
+    @extend %flex-center;
+
+    p
+    {
+        font-size: .8rem;
+
+        color: $light;
+    }
+}

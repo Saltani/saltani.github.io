@@ -1,0 +1,94 @@
+@import 'aside';
+
+$icon: 1.7rem;
+$text: 1.5rem;
+
+//////////////////////////////// NAVIGATION BAR ////////////////////////////////
+
+.navbar-container
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    display: grid;
+
+    width: 100%;
+    height: auto;
+
+    @extend %blue-linear-gradient;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'left-container right-container';
+
+
+    // All links, both text and icons
+    .link
+    {
+        margin: .5rem 1.0rem .5rem 1.0rem;
+
+        color: $light;
+    }
+
+    // All text-links
+    .link.text
+    {
+        font-size: $text;
+    }
+
+    // All icon-links
+    .link.icon
+    {
+        font-size: $icon;
+    }
+
+
+    ////////// Left side container //////////
+    .left-container
+    {
+        display: flex;
+        align-items: center;
+
+        grid-area: left-container;
+    }
+
+    // Home-icon
+    .link.home
+    {
+        margin-left: 1.5rem;
+    }
+
+    ////////// Right side container //////////
+    .right-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        grid-area: right-container;
+    }
+
+    // Hamburger-icon and Instagram-icon
+    .link.icon.menu,
+    .link.icon.instagram
+    {
+        margin-right: 1.5rem;
+    }
+}
+
+
+////////////////////////// MEDIA QUERIES //////////////////////////
+@media (max-width: 599.99px)
+{
+    .md
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 600px)
+{
+    .sm
+    {
+        display: none;
+    }
+}

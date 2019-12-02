@@ -1,0 +1,46 @@
+//////////////// Bootstrap 4 Media Query Sass Mixins ///////////////////////////
+
+// Extra small devices (portrait phones, less than 576px)
+@mixin xs
+{
+    @media (max-width: 575.9999px)
+    {
+        @content;
+    }
+}
+
+// Small devices
+@mixin sm
+{
+    @media (min-width: 576px) and (max-width: 767.9999px)
+    {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md
+{
+    @media (min-width: 768px) and (max-width: 991.9999px)
+    {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg
+{
+    @media (min-width: 992px) and (max-width: 1199.9999px)
+    {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl
+{
+    @media (min-width: 1200px)
+    {
+        @content;
+    }
+}

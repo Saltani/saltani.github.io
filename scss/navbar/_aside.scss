@@ -1,0 +1,83 @@
+$size: 2rem;
+
+////////////////////////// OVERLAY MENU /////////////////////////
+.overlay-menu
+{
+    font-family: $poiret-one;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow-x: hidden;
+
+    width: 0;
+    height: 100vh;
+
+    transition: .5s;
+
+    z-index: 1;
+
+    background-image: $blue-radial-gradient;
+
+    // Close Button (cross)
+    .link.icon.close
+    {
+        font-size: 3rem;
+        line-height: 0;
+
+        position: absolute;
+        top: 10%;
+        right: 12%;
+
+        color: $orange-red;
+    }
+
+    // Menu
+    .menu-container
+    {
+        position: relative;
+        top: 20%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        width: 100%;
+
+        white-space: nowrap; // Prevent Social Icons from wrapping when closing the Overlay Menu.
+    }
+
+    // Orange-Red Horizontal Line
+    .divider
+    {
+        width: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        color: $orange-red;
+    }
+
+    .link
+    {
+        font-size: $size;
+
+        color: $light;
+    }
+
+    // Text links
+    .link.text
+    {
+        padding: .5rem;
+    }
+
+    // Container for social icons
+    .icon-container
+    {
+        display: inline-flex;
+        justify-content: space-between;
+
+        width: 40%;
+        margin-top: .5rem;
+    }
+}
