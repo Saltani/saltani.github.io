@@ -1,17 +1,70 @@
 /*
-########################################################
---== MENU OVERLAY --==
-- Open and close Menu Overlay
-########################################################
+#-------------------------------------------------------------------------------
+# NAME: navbar.js
+#
+# DESC: Manage accessible mobile navigation and show the navbar on upward scroll.
+#
+# USAGE: Load after the navigation markup and jQuery in index.html.
+#
+# DEPS: A browser with inert support; jQuery for the navbar scroll behavior.
+#
+# AUTH: Saltani/Codex-cli
+#
+# DATE: 05. februar 2024
+#
+# EDIT: 22. oktober 2026
+#-------------------------------------------------------------------------------
 */
-// Open Menu Overlay by clicking on the "Hamburger" Menu
-$(".fa-bars").click(function() {
-  $("aside").css("width", "100%");
-});
+var menuButton = document.querySelector('.menu');
+var menu = document.querySelector('.overlay-menu');
+var closeButton = menu.querySelector('.close');
+var navbar = document.querySelector('.navbar-container');
+var main = document.querySelector('main');
 
-// Close Menu Overlay by clicking anywhere on the overlay.
-$("aside").click(function() {
-  $("aside").css("width", "0%");
+function openMenu() {
+  menu.hidden = false;
+  menu.inert = false;
+  menuButton.setAttribute('aria-expanded', 'true');
+  closeButton.focus();
+  navbar.inert = true;
+  main.inert = true;
+}
+
+function closeMenu() {
+  if (menu.hidden) return;
+  navbar.inert = false;
+  main.inert = false;
+  menuButton.setAttribute('aria-expanded', 'false');
+  // At desktop widths the mobile trigger is hidden; focus the visible home link.
+  var focusTarget = window.matchMedia('(min-width: 600px)').matches
+    ? navbar.querySelector('.home') : menuButton;
+  focusTarget.focus();
+  menu.inert = true;
+  menu.hidden = true;
+}
+
+menuButton.addEventListener('click', openMenu);
+// Preserve dismissal when clicking a link, the close button, or the backdrop.
+menu.addEventListener('click', closeMenu);
+menu.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    closeMenu();
+  } else if (event.key === 'Tab') {
+    var controls = menu.querySelectorAll('button, a[href]');
+    var first = controls[0];
+    var last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+});
+window.addEventListener('resize', function() {
+  if (window.matchMedia('(min-width: 600px)').matches) closeMenu();
 });
 
 
@@ -39,6 +92,7 @@ setInterval(function() {
 }, 250);
 
 function hasScrolled() {
+  if (!menu.hidden) return;
   var st = $(this).scrollTop();
 
   // Make sure they scroll more than delta

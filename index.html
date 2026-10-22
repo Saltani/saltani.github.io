@@ -61,16 +61,16 @@
       <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" class="md link icon messenger fab fa-facebook-messenger" title="Messenger"></a>
       <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" class="md link icon facebook fab fa-facebook" title="Facebook"></a>
       <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" class="md link icon instagram fab fa-instagram" title="Instagram"></a>
-      <a class="sm link icon menu fas fa-bars" title="menu"></a>
+      <button type="button" class="sm link icon menu fas fa-bars" aria-label="Åbn menu" aria-controls="navigation-menu" aria-expanded="false"></button>
 
     </div>
   </nav>
 
   <!-- Menu Overlay -->
-  <aside class="overlay-menu">
+  <aside id="navigation-menu" class="overlay-menu" role="dialog" aria-modal="true" aria-label="Navigation" hidden inert>
 
     <!-- Close Button (cross) -->
-    <a class="link icon close fas fa-times"></a>
+    <button type="button" class="link icon close fas fa-times" aria-label="Luk menu"></button>
 
     <!-- Menu -->
     <div class="menu-container">
@@ -175,7 +175,7 @@
       </div>
 
       <!-- FOF-logo -->
-      <a class="image-container image-link" href="https://www.fof.dk/da/kbh-omegn/soegeresultat#?cludoquery=%22Annisette%20Falk-Jensen%22&cludopage=1&cludorefurl=https%3A%2F%2Fwww.fof.dk%2Fda%2Fkbh-omegn&cludorefpt=FOF%20K%C3%B8benhavns%20Omegn&cludoinputtype=standard" target="_blank">
+      <a class="image-container image-link" href="https://www.fof.dk/underviser/annisette-falk-jensen" target="_blank">
         <img class="image" src="img/fof-logo/600x302.png" alt="FOF-logo">
       </a>
 
@@ -197,7 +197,7 @@
           </p>
 
           <p>
-            Du kan <a href="https://www.fof.dk/da/kbh-omegn/soegeresultat#?cludoquery=%22Annisette%20Falk-Jensen%22&cludopage=1&cludorefurl=https%3A%2F%2Fwww.fof.dk%2Fda%2Fkbh-omegn&cludorefpt=FOF%20K%C3%B8benhavns%20Omegn&cludoinputtype=standard" target="_blank">til&shy;mel&shy;de dig</a> ved
+            Du kan <a href="https://www.fof.dk/underviser/annisette-falk-jensen" target="_blank">til&shy;mel&shy;de dig</a> ved
             at klik&shy;ke på FOF-log&shy;o&shy;et oven&shy;for. Du bli&shy;ver her&shy;ef&shy;ter presen&shy;te&shy;ret for
             en li&shy;ste over de kur&shy;ser, jeg af&shy;hol&shy;der. Hér kan du klik&shy;ke dig ind på
             de en&shy;kel&shy;te kur&shy;ser, læ&shy;se me&shy;re om dem samt til&shy;mel&shy;de dig.
@@ -255,8 +255,6 @@
   <!-- Navigation Bar JS -->
   <script src="js/navbar.js"></script>
 
-  <!-- Custom JS -->
-  <script src="js/script.min.js"></script>
 </body>
 
 </html>
