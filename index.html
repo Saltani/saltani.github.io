@@ -1,260 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- Primary Meta Tags -->
-<title>Falk-Jensen Art</title>
-<meta name="title" content="Falk-Jensen Art">
-<meta name="description" content="Watercolor Art - The Imperfect is Perfect">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://art-gallery.falk-jensen.dk/">
-<meta property="og:title" content="Falk-Jensen Art">
-<meta property="og:description" content="Watercolor Art - The Imperfect is Perfect">
-<meta property="og:image" content="http://art-gallery.falk-jensen.dk/img/background-image/og-meta-tag.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://art-gallery.falk-jensen.dk/">
-<meta property="twitter:title" content="Falk-Jensen Art">
-<meta property="twitter:description" content="Watercolor Art - The Imperfect is Perfect">
-<meta property="twitter:image" content="http://art-gallery.falk-jensen.dk/img/background-image/og-meta-tag.png">
-
-
-  <!-- Social Icons (Font Awesome) -->
-  <link href="css/all.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Annisette Falk-Jensen er billedkunstner og underviser i akvarel. Oplev hendes værker i akvarel og pastel, og find hendes akvarelkurser hos FOF.">
+  <title>Annisette Falk-Jensen — akvarel og pastel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!--=========================== Navigation Bar ============================-->
-  <nav class="navbar-container">
-
-    <!-- Left side container -->
-    <div class="left-container">
-
-      <!-- Home icon -->
-      <a href="#home" class="link icon home fas fa-home"></a> <!-- Home Icon -->
-
-      <!-- Menu items -->
-      <a href="#about" class="md link text om">Om</a>
-      <a href="#kurser" class="md link text kurser">Kurser</a>
-      <a href="#kontakt" class="md link text kontakt">Kontakt</a>
-
-    </div>
-
-    <!-- Right side container -->
-    <div class="right-container">
-
-      <!-- Social Icons -->
-      <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" class="md link icon messenger fab fa-facebook-messenger" title="Messenger"></a>
-      <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" class="md link icon facebook fab fa-facebook" title="Facebook"></a>
-      <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" class="md link icon instagram fab fa-instagram" title="Instagram"></a>
-      <button type="button" class="sm link icon menu fas fa-bars" aria-label="Åbn menu" aria-controls="navigation-menu" aria-expanded="false"></button>
-
-    </div>
-  </nav>
-
-  <!-- Menu Overlay -->
-  <aside id="navigation-menu" class="overlay-menu" role="dialog" aria-modal="true" aria-label="Navigation" hidden inert>
-
-    <!-- Close Button (cross) -->
-    <button type="button" class="link icon close fas fa-times" aria-label="Luk menu"></button>
-
-    <!-- Menu -->
-    <div class="menu-container">
-
-      <!-- Text links -->
-      <a href="#home" class="link text home">Home</a>
-      <a href="#about" class="link text om">Om</a>
-      <a href="#kurser" class="link text kurser">Kurser</a>
-      <a href="#kontakt" class="link text kontakt">Kontakt</a>
-
-      <hr class="hr-20">
-
-      <!-- Container for social icons -->
-      <div class="icon-container">
-        <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" class="link icon messenger fab fa-facebook-messenger" title="Messenger"></a>
-        <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" class="link icon facebook fab fa-facebook" title="Facebook"></a>
-        <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" class="link icon instagram fab fa-instagram" title="Instagram"></a>
+  <a class="skip" href="#indhold">Spring til indhold</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="#top" aria-label="Art by Annisette Falk-Jensen, tilbage til toppen"><span>Art by Annisette</span><small>Falk-Jensen</small></a>
+    <nav aria-label="Hovedmenu"><a href="#kunst">Kunst</a><a href="#om">Om Annisette</a><a href="#cv">CV</a><a href="#kurser">Kurser</a></nav>
+  </header>
+  <main id="indhold">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="stroke"></span> Billedkunstner · Akvarel, pastel & gouache</p>
+        <h1 id="hero-title">The Imperfect<br><em>is Perfect.</em></h1>
+        <p class="hero-lead">Velkommen til Annisette Falk-Jensens univers af farver, fordybelse og kunst.</p>
+        <a class="primary-link" href="#kunst">Se Annisettes kunst <span aria-hidden="true">↘</span></a>
+        <div class="hero-aside"><span class="line"></span><p>»Jeg elsker at fordybe mig i farvernes verden.«</p></div>
       </div>
-
-    </div>
-  </aside>
-  <!--==================== MAIN GRID CONTAINER ====================-->
-  <main class="grid-container">
-
-    <!--========================= HEADER =========================-->
-    <header id="home">
-      <!-- Frontpage Image -->
-      <div class="frontpage">
-        <div class="background-image"></div>
-      </div>
-
-      <!-- Frontpage Banner -->
-      <h1 class="banner">
-        <small>Watercolor Art</small>Falk-Jensen Art<small>The Imperfect is Perfect</small>
-      </h1>
-    </header>
-
-    <!--========================= ABOUT =========================-->
-    <section class="about-section" id="about">
-
-      <!-- Heading -->
-      <div class="heading-container">
-        <h1 class="heading">Om mig og min Akvarel</h1>
-      </div>
-
-      <!-- Image -->
-      <div class="image-container">
-        <img class="image" src="img/annisette/709x708.jpg" alt="Annisette Falk-Jensen">
-      </div>
-
-
-      <!-- Text -->
-      <article class="text-container">
-        <div class="inner-text-container">
-          <p>
-            <sup><i class="quotation-marks fas fa-quote-left"></i></sup>
-            Jeg for&shy;dy&shy;ber mig i far&shy;ver&shy;ne, som lang&shy;somt spre&shy;der sig på pa&shy;pi&shy;ret og
-            by&shy;der hin&shy;an&shy;den vel&shy;kom&shy;men. Lang&shy;somt for&shy;mer der sig en blomst, et
-            an&shy;sigt, et smil, som lys&shy;ner i takt med at far&shy;ver&shy;ne tør&shy;rer. Ti&shy;den
-            står stil&shy;le og ver&shy;den om&shy;kring mig for&shy;svin&shy;der.
-            I det øje&shy;blik, er jeg ét med min akva&shy;rel.
-            <sup><i class="quotation-marks fas fa-quote-right"></i></sup>
-          </p>
-          <hr class="hr-30">
-          <p>
-            Det star&shy;tede for&shy;å&shy;ret 2016, hvor jeg for før&shy;ste gang stif&shy;tede
-            be&shy;kendt&shy;skab med akva&shy;rel. En blok, en pen&shy;sel, en pa&shy;let&shy;te og en bog
-            (som nok var me&shy;re til de øve&shy;de) var min start.
-            Jeg op&shy;dage&shy;de en ver&shy;den, som jeg ind&shy;til da kun hav&shy;de hørt om.
-            Jeg blev gre&shy;bet af en driv&shy;kraft og en iver, som jeg ikke hav&shy;de følt
-            tid&shy;li&shy;ge&shy;re. Dér star&shy;tede min fan&shy;ta&shy;sti&shy;ske rej&shy;se ind i akva&shy;rel&shy;lens
-            mysti&shy;ske og magi&shy;ske ver&shy;den.
-          </p>
-          <p>
-            Jeg til&shy;brag&shy;te man&shy;ge ti&shy;mer både dag og af&shy;ten, hvor jeg ter&shy;pe&shy;de og
-            øve&shy;de mig. Jeg søg&shy;te vi&shy;den i bø&shy;ger og på "net&shy;tet" og fra de man&shy;ge
-            hjælp&shy;somme akva&shy;re&shy;li&shy;ster som jeg lær&shy;te at ken&shy;de. Min tørst ef&shy;ter
-            vi&shy;den om far&shy;ver, ma&shy;te&shy;ri&shy;a&shy;ler og tek&shy;nik&shy;ker vok&shy;se&shy;de jo me&shy;re jeg lær&shy;te
-            og lang&shy;somt men sik&shy;kert fik jeg akva&shy;rel&shy;len ind un&shy;der hu&shy;den.
-            Jeg lod min kre&shy;a&shy;ti&shy;vi&shy;tet og spon&shy;ta&shy;ni&shy;tet få frit spil, og min
-            udvik&shy;ling og tørst ef&shy;ter at læ&shy;re me&shy;re tog fart.
-          </p>
-          <p>
-            Mit mot&shy;to "The im&shy;per&shy;fect is per&shy;fect" er en ac&shy;cept af, at akva&shy;rel&shy;len
-            er le&shy;ven&shy;de, ufor&shy;ud&shy;si&shy;ge&shy;lig og magisk, og at per&shy;fek&shy;tio&shy;nis&shy;me ikke hø&shy;rer
-            hjem&shy;me i akva&shy;rel&shy;lens uni&shy;vers.
-          </p>
-          <p>
-            Jeg er dybt tak&shy;nem&shy;me&shy;lig for alle som har støt&shy;tet mig kunst&shy;ne&shy;risk og
-            per&shy;son&shy;ligt, det er uund&shy;vær&shy;ligt for mig.
-          </p>
-        </div>
-      </article>
+      <figure class="hero-figure">
+        <img src="bearing.jpg" alt="Akvarelmaleri af en kvinde i hvid kjole på en trappe" width="1344" height="2048" fetchpriority="high">
+        <figcaption>Et værk af Annisette Falk-Jensen</figcaption>
+      </figure>
     </section>
-
-    <!--========================= KURSER =========================-->
-    <section class="kurser-section" id="kurser">
-
-      <!-- Heading -->
-      <div class="heading-container">
-        <h1 class="heading">Kurser</h1>
+    <section class="art-section" id="kunst" aria-labelledby="art-title">
+      <div class="shell art-inner">
+        <div class="art-intro"><p class="eyebrow">01 / Kunst</p><h2 id="art-title">Et blik ind i<br><em>hendes univers.</em></h2></div>
+        <div class="art-content"><p>Et udvalg af Annisettes værker. Klik på et maleri for at se det større. Du kan også følge hendes seneste kunst på Instagram.</p><a class="text-link" href="https://www.instagram.com/annisettefalkjensenart/" target="_blank" rel="noopener noreferrer">Se flere værker på Instagram <span aria-hidden="true">↗</span></a></div>
       </div>
-
-      <!-- FOF-logo -->
-      <a class="image-container image-link" href="https://www.fof.dk/underviser/annisette-falk-jensen" target="_blank">
-        <img class="image" src="img/fof-logo/600x302.png" alt="FOF-logo">
-      </a>
-
-      <!-- Text -->
-      <article class="text-container">
-        <div class="inner-text-container">
-
-          <p>
-            Jeg un&shy;der&shy;vi&shy;ser i akva&shy;rel gen&shy;nem FOF, og alle er vel&shy;kom&shy;ne.
-            Her ar&shy;bejder vi med far&shy;ver, lys og skyg&shy;ge, for&shy;skel&shy;li&shy;ge ef&shy;fek&shy;ter,
-            ma&shy;te&shy;ri&shy;a&shy;ler, skit&shy;ser, per&shy;spek&shy;tiv og kom&shy;po&shy;si&shy;tion.
-          </p>
-          <p>
-            Det gæl&shy;der og&shy;så om at ha&shy;ve det sjovt når vi ma&shy;ler
-            med akva&shy;rel. Den er le&shy;ven&shy;de, ufor&shy;ud&shy;si&shy;ge&shy;lig og be&shy;stemt en ud&shy;for&shy;dring
-            for den kre&shy;a&shy;ti&shy;ve og kunst&shy;ne&shy;ri&shy;ske udvik&shy;ling. Det bed&shy;ste er, at al&shy;le
-            kan væ&shy;re med, uan&shy;set om du er ny&shy;be&shy;gyn&shy;der eller øvet.
-            Kom og vær med i hyg&shy;ge&shy;ligt og kre&shy;a&shy;tivt sel&shy;skab.
-          </p>
-
-          <p>
-            Du kan <a href="https://www.fof.dk/underviser/annisette-falk-jensen" target="_blank">til&shy;mel&shy;de dig</a> ved
-            at klik&shy;ke på FOF-log&shy;o&shy;et oven&shy;for. Du bli&shy;ver her&shy;ef&shy;ter presen&shy;te&shy;ret for
-            en li&shy;ste over de kur&shy;ser, jeg af&shy;hol&shy;der. Hér kan du klik&shy;ke dig ind på
-            de en&shy;kel&shy;te kur&shy;ser, læ&shy;se me&shy;re om dem samt til&shy;mel&shy;de dig.
-          </p>
-        </div>
-      </article>
+      <div class="shell gallery" aria-label="Udvalgte malerier af Annisette Falk-Jensen">
+        <figure class="gallery-item"><button type="button" data-artwork="0" aria-label="Se A Quiet Wait større"><img src="gallery/a-quiet-wait.webp" alt="Maleri af en kvinde i lys kjole mod en kølig baggrund" loading="lazy"></button><figcaption>A Quiet Wait</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="1" aria-label="Se Blåternet større"><img src="gallery/blaaternet.webp" alt="Stilleben med citrusfrugter på en blåternet dug" loading="lazy"></button><figcaption>Blåternet</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="2" aria-label="Se Calm større"><img src="gallery/calm.webp" alt="Stille landskab ved vandet med trægrene i forgrunden" loading="lazy"></button><figcaption>Calm</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="3" aria-label="Se Cosmos in Bloom større"><img src="gallery/cosmos-in-bloom.webp" alt="Hvid blomst mod en mørk, malerisk baggrund" loading="lazy"></button><figcaption>Cosmos in Bloom</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="4" aria-label="Se Dauntless større"><img src="gallery/dauntless.webp" alt="Farverigt portræt i grønne og røde toner" loading="lazy"></button><figcaption>Dauntless</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="5" aria-label="Se Den gule kop større"><img src="gallery/den-gule-kop.webp" alt="Gul kop og blomster på et lyst bord" loading="lazy"></button><figcaption>Den gule kop</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="6" aria-label="Se Just a Boat større"><img src="gallery/just-a-boat.webp" alt="Lille båd ved bredden af et stille vand" loading="lazy"></button><figcaption>Just a Boat</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="7" aria-label="Se Musikeren med sin musik større"><img src="gallery/musikeren-med-sin-musik.webp" alt="Musiker med guitar og hat" loading="lazy"></button><figcaption>Musikeren med sin musik</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="8" aria-label="Se Stillness in Bloom større"><img src="gallery/stillness-in-bloom.webp" alt="Farverige blomster i blå og grønne vaser" loading="lazy"></button><figcaption>Stillness in Bloom</figcaption></figure>
+        <figure class="gallery-item"><button type="button" data-artwork="9" aria-label="Se The Quiet Gate større"><img src="gallery/the-quiet-gate.webp" alt="En person foran en lysende port i et blåt landskab" loading="lazy"></button><figcaption>The Quiet Gate</figcaption></figure>
+      </div>
     </section>
-
-
-    <!--========================= KONTAKT =========================-->
-    <section class="kontakt-container" id="kontakt">
-
-      <!-- Heading -->
-      <div class="heading-container">
-        <h1 class="heading">Kontakt</h1>
+    <section class="about shell" id="om" aria-labelledby="about-title">
+      <div><p class="eyebrow">02 / Om Annisette</p><h2 id="about-title">Farverne får<br><em>lov at leve.</em></h2></div>
+      <div class="about-copy">
+        <p>Jeg elsker at arbejde med akvarel, gouache og tørpastel, fordi hvert medie har sit eget temperament og sine egne muligheder.</p>
+        <p>Akvarellens spontanitet, gouachens styrke og pastellens intense farver giver mig frihed til at udforske kontraster, stemninger og følelser.</p>
+        <p>For mig handler kunst ikke om at gengive virkeligheden perfekt, men om at skabe fortællinger, der vækker noget i beskueren.</p>
+        <p>Min kunstneriske erkendelse er, at det uperfekte er det perfekte – og at kunsten bliver levende i mødet mellem kontrol og det uforudsigelige.</p>
+        <p class="about-signature">Annisette Falk-Jensen</p>
       </div>
-
-      <!-- Social Icons -->
-      <div class="social-icons-container">
-        <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" class="icon fab fa-facebook-messenger" title="Messenger"></a>
-        <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" class="icon fab fa-facebook" title="Facebook"></a>
-        <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" class="icon fab fa-instagram" title="Instagram"></a>
-      </div>
-
-      <!-- Text -->
-      <article class="text-container">
-        <div class="inner-text-container">
-          <p>
-            Hvis du har spørgs&shy;mål eller kom&shy;men&shy;ta&shy;rer er du vel&shy;kom&shy;men til at
-            skri&shy;ve en be&shy;sked til mig på <a href="https://www.facebook.com/messages/t/annisette70/" target="_blank" title="Messenger">Messenger</a>.
-          </p>
-          <p>
-            Du kan og&shy;så tage et kig på min <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" title="Facebook">Facebook-side</a>. Her
-            kan du se mi&shy;ne ma&shy;le&shy;ri&shy;er og fin&shy;de in&shy;for&shy;ma&shy;tion om kom&shy;men&shy;de
-            events. Si&shy;den bli&shy;ver lø&shy;ben&shy;de op&shy;da&shy;te&shy;ret.
-          </p>
-          <p>
-            På <a href="https://www.instagram.com/annisettefalkjensen/" target="_blank" title="Instagram">Instagram</a> kan du se de sam&shy;me ma&shy;le&shy;ri&shy;er som på min
-            <a href="https://www.facebook.com/falkjensenartgallery/" target="_blank" title="Facebook">Facebook-side</a>.
-          </p>
-        </div>
-      </article>
     </section>
-
-
-    <!--========================= FOOTER =========================-->
-    <footer>
-      <p>
-        &#x57;&#x65;&#x62;&#x6d;&#x61;&#x73;&#x74;&#x65;&#x72;&#x3a; &#x50;&#x6f;&#x76;&#x6c; &#x46;&#x61;&#x6c;&#x6b;&#x2d;&#x4a;&#x65;&#x6e;&#x73;&#x65;&#x6e;
-        &#47; &#x70;&#x6f;&#x76;&#x6c;&#x40;&#x66;&#x61;&#x6c;&#x6b;&#x2d;&#x6a;&#x65;&#x6e;&#x73;&#x65;&#x6e;&#x2e;&#x64;&#x6b;
-      </p>
-    </footer>
+    <section class="cv-section" id="cv" aria-labelledby="cv-title">
+      <div class="shell cv-layout">
+        <div class="cv-intro"><p class="eyebrow">03 / Kunstnerisk CV</p><h2 id="cv-title">Udstillinger<br><em>& udgivelser.</em></h2></div>
+        <div class="cv-content">
+          <section aria-labelledby="group-title">
+            <h3 id="group-title">Gruppeudstillinger</h3>
+            <div class="cv-year"><h4>2026</h4><ul>
+              <li><div>BiZart Åben 2026, Holbæk, Danmark</div></li>
+              <li><div>Human Nature, Mindmachine Art Gallery, Odense, Danmark</div></li>
+              <li><div>IV International Watercolor Festival, Colors of Armenia</div></li>
+              <li><div>Aurora Watercolour Festival, Iceland</div></li>
+              <li><div>Watercolor Golden Brush</div></li>
+              <li><div>Kunst i Pinsen, Danmark</div></li>
+              <li><div>El IV Festival Internacional de Acuarela Córdoba 2026</div></li>
+              <li><div>Artio Gallery: Global Horizons, a celebration of artistic expression</div></li>
+            </ul></div>
+            <div class="cv-year"><h4>2025</h4><ul>
+              <li><div>Nordic akvarel 2025, Nordiska akvarell sällskabet, Frederikshavn, Danmark</div></li>
+              <li><div>Expo Metro, Barcelona</div></li>
+              <li><div>Herregårdsmuseet Selsø Slot, Danmark</div></li>
+              <li><div>Fabriano in acquarello 2025, Fabriano, Italien</div></li>
+            </ul></div>
+            <div class="cv-year"><h4>2024</h4><ul>
+              <li><div>Fabriano in acquarello 2024, The Fort Worth Community Arts Center, Texas</div></li>
+              <li><div>Fabriano in acquarello 2024, Fabriano, Italien</div></li>
+              <li><div>HC, Hvidovre, Danmark</div></li>
+              <li><div>Lejre Kunst, Lejre, Danmark</div></li>
+            </ul></div>
+          </section>
+          <section aria-labelledby="solo-title">
+            <h3 id="solo-title">Soloudstillinger</h3>
+            <div class="cv-year"><h4>2024</h4><ul><li><div>NCC Kunstforening, Søborg, Danmark</div></li></ul></div>
+            <div class="cv-year"><h4>2019</h4><ul><li><div>Kilden Kulturhus, Brøndbyøster, Danmark</div></li></ul></div>
+            <div class="cv-year"><h4>2018</h4><ul><li><div>Sorø Kunstgangen, Sorø, Danmark</div></li></ul></div>
+            <div class="cv-year"><h4>2017</h4><ul><li><div>Mosedamsgaard, Værløse, Danmark</div></li></ul></div>
+            <div class="cv-year"><h4>2016</h4><ul><li><div>Erhvervsagenten, Glostrup, Danmark</div></li></ul></div>
+          </section>
+          <section aria-labelledby="publication-title">
+            <h3 id="publication-title">Publikation</h3>
+            <div class="cv-year"><h4>2025</h4><ul><li><div><cite>100 Emerging Artworks of 2025</cite>, Arts to Hearts Project</div></li></ul></div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="courses" id="kurser" aria-labelledby="courses-title">
+      <div class="shell courses-inner"><div><p class="eyebrow">04 / Akvarelkurser</p><h2 id="courses-title">Mal med<br><em>Annisette.</em></h2><p>Har du lyst til selv at arbejde med akvarel? På Annisettes underviserside hos FOF kan du læse om hendes kurser og finde de aktuelle hold.</p></div><a class="course-link" href="https://www.fof.dk/underviser/annisette-falk-jensen" target="_blank" rel="noopener noreferrer">Se Annisettes kurser hos FOF <span aria-hidden="true">↗</span></a></div>
+    </section>
   </main>
-
-  <!-- Navigation Bar JS -->
-  <script src="js/navbar.js"></script>
-
+  <footer class="site-footer shell">
+    <span>Annisette Falk-Jensen</span>
+    <nav class="footer-social" aria-label="Sociale medier">
+      <a href="https://www.instagram.com/annisettefalkjensenart/" target="_blank" rel="noopener noreferrer" aria-label="Annisette på Instagram (åbner i ny fane)">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/ArtbyAnnisetteFalkJensen" target="_blank" rel="noopener noreferrer" aria-label="Annisette på Facebook (åbner i ny fane)">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M14.2 21v-7.8h2.6l.4-3h-3V8.3c0-.9.3-1.5 1.5-1.5h1.6V4.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8.5v3h2.6V21h3.1Z"/></svg>
+        Facebook
+      </a>
+    </nav>
+    <a href="#top">Til toppen ↑</a>
+  </footer>
+  <dialog class="art-dialog" aria-label="Maleri i stor visning"><button class="dialog-close" type="button" aria-label="Luk billedet">×</button><img alt=""><div class="dialog-footer"><button class="dialog-prev" type="button" aria-label="Forrige maleri">←</button><p></p><button class="dialog-next" type="button" aria-label="Næste maleri">→</button></div></dialog>
+  <script src="gallery.js" defer></script>
 </body>
-
 </html>
